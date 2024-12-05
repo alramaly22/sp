@@ -1,0 +1,101 @@
+/* ملف WelcomePage.css */
+
+.welcome-container {
+    display: flex;
+    justify-content: center;
+    /* محاذاة أفقية */
+    align-items: center;
+    /* محاذاة رأسية */
+    flex-direction: column;
+    /* ترتيب العناصر عموديًا */
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    height: 100vh;
+    /* تجعل الحاوية تغطي الشاشة بالكامل */
+    margin: 0;
+    /* إزالة أي مسافة خارجية */
+    box-sizing: border-box;
+    background: linear-gradient(rgb(174 174 174 / 8%), rgb(158 158 158 / 15%)), url(/src/assets/89.jpg) no-repeat;
+    background-size: cover;
+    background-position: center top;
+    /* background-attachment: fixed; */
+    /* لتجنب أي مشاكل في الأحجام */
+}
+
+.welcome-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+
+/* .welcome-container {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/) no-repeat;
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+} */
+
+.background-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.9;
+    /* لجعل الخلفية أكثر وضوحًا */
+}
+
+.welcome-content {
+    text-align: center;
+    padding: 20px;
+    /* background: rgba(0, 0, 0, 0.5); */
+    /* خلفية شفافة للمحتوى */
+    border-radius: 15px;
+    max-width: 600px;
+}
+
+.welcome-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.welcome-image {
+    order: -1;
+}
+
+.imgwelcome {
+    width: 50%;
+}
+
+.welcome-description {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.start-button {
+    background-color: #f05a28;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.start-button:hover {
+    background-color: #e04e20;
+}
+
+@media (min-width: 1024px) {
+    .welcome-container {
+        flex-direction: row;
+        /* ترتيب العناصر أفقيًا */
+        text-align: left;
+        /* محاذاة النص لليسار */
+    }
+}
