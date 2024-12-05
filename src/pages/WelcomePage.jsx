@@ -1,17 +1,17 @@
 import React from "react";
-import { useNavigate } from "react-router-dom"; // للتنقل بين الصفحات
-import "./../style/WelcomePage.css"; // تأكد من إضافة ملف CSS مخصص للتنسيق
+import { useNavigate } from "react-router-dom"; 
+import "./../style/WelcomePage.css"; 
 
 const WelcomePage = () => {
-    const navigate = useNavigate(); // للتحكم في التنقل
+    const navigate = useNavigate(); 
 
     const handleStartTest = () => {
-        navigate("/homepage"); // ينتقل إلى صفحة HomePage
+        navigate("/homepage"); 
     };
 
     return (
         <div className="welcome-container">
-            {/* الخلفية */}
+            
             {/* <div className="welcome-background">
                 <img src="src/assets/89.jpg" alt="Background" className="background-img" />
             </div> */}
